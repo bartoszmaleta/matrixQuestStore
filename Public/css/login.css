@@ -2,6 +2,17 @@ body {
     font-size: 24px;
 }
 
+
+/* TO HAVE MATRIX GIF IN THE BACKGROUND, UNCOMMENT BELOW */
+/* body{
+    background-image: url('../../resoruces/background/main2.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+} */
+
 * {
     font-family: 'Fredoka One', cursive;
 }
@@ -60,3 +71,7 @@ p {
         font-size: 150px;
     }
 }
+
+/* ------------------------------------ */
+/* body {background: black;}
+canvas {display: block;} */
