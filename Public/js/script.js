@@ -1,3 +1,18 @@
+function showMessage() {
+    document.querySelector(".message").classList.toggle("hide");
+    return false;
+}
+
+function showCoctails() {
+    document.querySelector(".coctails").classList.toggle("hide");
+}
+
+function showStudents() {
+    window.location="./students.html"
+}
+
+// ------------------------------------------------------------------------------
+
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
