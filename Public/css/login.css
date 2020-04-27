@@ -4,17 +4,19 @@ body {
 
 
 /* TO HAVE MATRIX GIF IN THE BACKGROUND, UNCOMMENT BELOW */
-/* body{
-    background-image: url('../../resoruces/background/main2.gif');
+/* main, main2, main5 */
+body{
+    background-image: url('../../resoruces/background/main5.gif');
     background-size: cover;
     
     height: 100vh;
     padding:0;
     margin:0;
-} */
+}
 
 * {
     font-family: 'Fredoka One', cursive;
+    color: white;
 }
 
 form > input, button {
