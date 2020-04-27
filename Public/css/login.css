@@ -1,0 +1,62 @@
+body {
+    font-size: 24px;
+}
+
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+form > input, button {
+    border-radius: 0.7em;
+    border: none;
+    font-size: 1em;
+    line-height: 2em;
+    display: block;
+    margin: 1em;
+    padding: 0 1em;
+}
+
+form > input {
+    border: 2px solid gray;
+}
+
+button {
+    background: #555555;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFFFFF;
+    margin: 1em;
+    padding: 0 1em;
+    width: 20em;            
+}
+
+button > i {
+    margin-right: 1em;
+}
+
+p {
+    padding: 1em;
+}
+
+.message {
+    background-color: red;
+    border-radius: 1em;
+    color: white;
+    padding: 1em;
+    width: 20em;
+    margin: 1em;
+}
+
+.coctails {
+    background-color: green;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-device-width: 400px){
+    body {
+        font-size: 150px;
+    }
+}
