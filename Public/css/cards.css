@@ -8,12 +8,6 @@ body {
     color: #37A611;
 }
 
-canvas {
-    display: block;
-    position: absolute;
-    z-index: -1;
-}
-
 * {
     font-family: 'Arial', sans-serif;
 }
