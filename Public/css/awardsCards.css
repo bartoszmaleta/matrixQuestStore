@@ -1,10 +1,21 @@
-body {
-    font-size: 24px;
-
+* {
+    margin: 0; padding: 0;
 }
 
-* {
+body {
+    font-size: 24px;
+    background: black;
     font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+html{
+    height: 100%;
 }
 
 form > input, button {
@@ -66,10 +77,8 @@ p {
 
 
 .container {
-    /* margin: 3em; */
-    /* background-image: url("../../resoruces/background/screenBackround.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll; */
+    /* margin: 3em; */ 
+   
 }
 
 .cards {
@@ -102,7 +111,8 @@ p {
     min-height: 15em;
     width: 60%;
     /* overflow: scroll; */
-    background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%);
+    background: black;
+    /* background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%); */
     /* background-color: bisque; */
 }
 
@@ -144,6 +154,7 @@ img {
     width: 100%;
     display: flex;
     text-align: center;
+    color: #37A611;
 }
 
 .card-pillPrice {
@@ -152,6 +163,8 @@ img {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    text-align: right;
+    color: #37A611;
 }
 
 

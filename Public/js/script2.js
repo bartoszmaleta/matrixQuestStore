@@ -17,8 +17,8 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
-c.height = window.innerHeight;
-c.width = window.innerWidth;
+c.height = document.body.clientWidth;
+c.width = document.body.clientWidth;
 
 //chinese characters - taken from the unicode charset
 var chinese = "P.Grax Denim";
