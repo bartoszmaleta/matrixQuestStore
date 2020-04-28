@@ -1,9 +1,15 @@
 /* CANVAS MATRIX BACKGROUND */
 
 /*basic reset*/
-* {margin: 0; padding: 0;}
+* {
+    margin: 0; padding: 0;
+}
+
 /*adding a black bg to the body to make things clearer*/
-body {background: black;}
+body {
+    background: black;
+}
+
 canvas {
     display: block;
     position: absolute;
@@ -14,7 +20,7 @@ canvas {
 
 /* html{
 	height: 100%;
-	} */
+} */
 
 body {
 	font-family: 'Arial', sans-serif;
@@ -33,22 +39,6 @@ body {
 	box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
 }
-
-/* TO HAVE MATRIX GIF IN THE BACKGROUND, UNCOMMENT BELOW */
-/* main, main2, main5 */
-/* body{
-    background-image: url('../../resoruces/background/main5.gif');
-    background-size: cover;
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-} */
-
-/* * {
-    font-family: 'Fredoka One', cursive;
-    color: white;
-} */
 
 .login-box h2 {
 	margin: 0 0 30px;
@@ -200,8 +190,10 @@ body {
         font-size: 150px;
     }
 }
+*/
 
-#navigation {
+
+/* #navigation {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -237,15 +229,14 @@ body {
 
 #navigation li a {
     border-radius: 25px;
-}
+} */
 
-
+/*
 .footer {
     background: silver;
 }
- */
   
-/*    Redundant, but neede if logo headlines
+/*    Redundant, but needed if logo headlines
   #headline {
     display: flex;
     justify-content: center;
@@ -270,3 +261,42 @@ body {
 
 #footerContact a {
     background: silver;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+}
+
+#footerContact a:hover {
+    background: #f77e05;
+    box-shadow: inset 0 0 60px 1px rgba(0, 0, 0, .3);
+}
+
+#footerContact .footer {
+    background: silver;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+} */
+
+/* TO HAVE MATRIX GIF FROM PATH IN THE BACKGROUND, UNCOMMENT BELOW */
+/* main, main2, main5 */
+/* body{
+    background-image: url('../../resoruces/background/main5.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+} */
+ 
+/* ------------------------------------ */
+/* 
+#footerContact li a {
+    border-radius: 25px;
+}
+
+#footerContact li footer {
+    border-radius: 25px;
+} */ 

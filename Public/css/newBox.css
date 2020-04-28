@@ -1,0 +1,82 @@
+.menuBox {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px (0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.menuBox {
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+#card {
+    position: static;
+    width: 380px;
+    height: 584px;
+    left: 538px;
+    top: 557px;
+
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%);
+    border: 6px solid #37A611;
+    box-sizing: border-box;
+    border-radius: 21.9564px;
+}
+
+#titleCard {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35.2871px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFDFD;
+}
+
+#descriptionCard {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35.2871px;
+    line-height: 48px;
+    text-align: center;
+    margin: 10px;
+
+    color: #FFFDFD;
+}
+
+#pillsAwarded {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35.2871px;
+    line-height: 48px;
+    /* text-align: center; */
+    /* justify-content: flex-end; */
+    align-self: flex-end;
+    /* align-items: flex-end; */
+
+    color: #FFFDFD;
+}
+
+/* #card1 {
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+} */
+
