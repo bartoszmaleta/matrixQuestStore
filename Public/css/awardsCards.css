@@ -1,0 +1,186 @@
+body {
+    font-size: 24px;
+
+}
+
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+form > input, button {
+    border-radius: 0.7em;
+    border: none;
+    font-size: 1em;
+    line-height: 2em;
+    display: block;
+    margin: 1em;
+    padding: 0 1em;
+}
+
+form > input {
+    border: 2px solid gray;
+}
+
+button {
+    background: #555555;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFFFFF;
+    margin: 1em;
+    padding: 0 1em;
+    width: 20em;            
+}
+
+button > i {
+    margin-right: 1em;
+}
+
+p {
+    padding: 1em;
+}
+
+.message {
+    background-color: red;
+    border-radius: 1em;
+    color: white;
+    padding: 1em;
+    width: 20em;
+    margin: 1em;
+}
+
+.coctails {
+    background-color: green;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-device-width: 400px){
+    body {
+        font-size: 150px;
+    }
+}
+
+
+
+
+.container {
+    /* margin: 3em; */
+    /* background-image: url("../../resoruces/background/screenBackround.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll; */
+}
+
+.cards {
+    margin: 3em;
+    /* background-color: aliceblue; */
+    border-radius: 1em;
+
+    /* display: flex;
+    justify-content: center; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: row wrap;
+    row-gap: 1em; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.card > img {
+    width:100%;
+}
+.card {
+    border: solid 2px #37A611;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 15em;
+    width: 60%;
+    /* overflow: scroll; */
+    background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%);
+    /* background-color: bisque; */
+}
+
+.card-title {
+    background-color: aqua;
+    border-radius: 1em 1em 0 0;
+    line-height: 2em;
+}
+
+/* .card-content { */
+    /* background-color: aquamarine; */
+    /* width: 100%; */
+    /* display: flex; */
+/* } */
+
+.card-details {
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.card-image {
+    width: auto;
+    height: auto;
+    /* width: auto; */
+    text-align: center;
+    padding: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.card-description {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.card-pillPrice {
+
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    body {
+        font-size: 48px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        margin: 0.5em;
+    }
+}
+
+
+.add {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
