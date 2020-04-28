@@ -1,18 +1,18 @@
+function showMessage() {
+    document.querySelector(".message").classList.toggle("hide");
+    return false;
+}
 
-// function init() {
-//     audio = document.getElementById("audio");
-//     c = document.getElementById("c");
-//     ctx = can.getContext("2d");
-//     audio.addEventListener("playing", draw, false);
-//     audio.addEventListener("pause", stop, false);
-//     audio.addEventListener("ended", stop, false);
-// }
+function showCoctails() {
+    document.querySelector(".coctails").classList.toggle("hide");
+}
 
-function alertMessage() {
-    alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
+function showStudents() {
+    window.location="./students.html"
 }
 
 // ------------------------------------------------------------------------------
+
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
@@ -61,16 +61,3 @@ function draw() {
 }
 
 setInterval(draw, 33);
-
-// sound 
-function play() {
-
-    var audio = new Audio('../Sounds/m.mp3');
-    audio.loop = true;
-    audio.play().then(function(e) {
-        clearInterval(musicIntervalId);
-    });
-
-}
-
-var musicIntervalId = setInterval(play, 500);
