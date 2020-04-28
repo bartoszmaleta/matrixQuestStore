@@ -11,6 +11,10 @@ function showStudents() {
     window.location="./students.html"
 }
 
+function alertMessage() {
+    alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
+}
+
 // ------------------------------------------------------------------------------
 
 var c = document.getElementById("c");
