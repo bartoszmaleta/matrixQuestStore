@@ -8,6 +8,12 @@ body {
     color: #37A611;
 }
 
+canvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
 * {
     font-family: 'Arial', sans-serif;
 }
@@ -72,8 +78,6 @@ p {
 
 .container {
     /* margin: 3em; */
-    /* justify-items: center; */
-    /* align-items: center; */
 }
 
 .cards {
@@ -112,29 +116,18 @@ p {
 }
 
 .card-title {
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 1em 1em 0 0;
     line-height: 2em;
 }
 
-/* .card-content { */
-    /* background-color: aquamarine; */
-    /* width: 100%; */
-    /* display: flex; */
-/* } */
-
-/* .card-details {
-    background-color: bisque;
-    display: flex;
-    justify-content: stretch;
-    width: 100%;
-} */
 
 .card-image {
     width: auto;
     height: auto;
     text-align: center;
     padding: 15px;
+    background: aqua;
 }
 
 img {
@@ -144,15 +137,16 @@ img {
 }
 
 .card-description {
-    padding: 15px;
+    /* font-size: 12px; */
     width: 100%;
-    /* display: flex; */
+    background: red;
+    width: 100%;
+    display: flex;
     /* justify-content: center; */
 }
 
 .card-pillPrice {
-
-    padding: 15px;
+    background: green;
     display: flex;
     justify-content: flex-end;
     width: 100%;
