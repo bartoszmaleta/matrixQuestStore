@@ -11,7 +11,11 @@ body {
 canvas {
     display: block;
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     z-index: -1;
+    width: 100%;
 }
 
 html{
@@ -118,9 +122,11 @@ p {
 }
 
 .card-title {
-    background-color: aqua;
+    color: white;
     border-radius: 1em 1em 0 0;
     line-height: 2em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
 }
 
 /* .card-content { */
