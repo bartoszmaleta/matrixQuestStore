@@ -160,7 +160,7 @@ body {
 
 .login-box span:nth-child(3){
 	bottom: 0;
-	tight: -100%;
+	right: -100%;
 	width: 100%;
 	height: 2px;
 	background: linear-gradient(270deg, transparent, #00FF41);
@@ -184,7 +184,7 @@ body {
 	height: 100%;
 	background: linear-gradient(360deg, transparent, #00FF41);
 	animation: btn-anim4 1s linear infinite;
-	animation-dealy: .75s;
+	animation-delay: .75s;
 }
 
 @keyframes btn-anim4 {
@@ -270,31 +270,3 @@ body {
 
 #footerContact a {
     background: silver;
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: black;
-}
-
-#footerContact a:hover {
-    background: #f77e05;
-    box-shadow: inset 0 0 60px 1px rgba(0, 0, 0, .3);
-}
-
-#footerContact .footer {
-    background: silver;
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: black;
-} */
- 
-/* ------------------------------------ */
-/* 
-#footerContact li a {
-    border-radius: 25px;
-}
-
-#footerContact li footer {
-    border-radius: 25px;
-} */ 
