@@ -8,6 +8,19 @@
 //     audio.addEventListener("ended", stop, false);
 // }
 
+function showMessage() {
+   document.querySelector(".message").classList.toggle("hide");
+   return false;
+}
+
+function showCoctails() {
+   document.querySelector(".coctails").classList.toggle("hide");
+}
+
+function showStudents() {
+   window.location="./students.html"
+}
+
 function alertMessage() {
    alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
 }
@@ -21,7 +34,8 @@ c.height = document.body.clientWidth;
 c.width = document.body.clientWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "P.Grax Denim";
+// var chinese = "P.Grax Denim";
+var chinese = "Aleksandra. Bartosz- Michal";
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
