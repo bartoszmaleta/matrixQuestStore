@@ -1,6 +1,5 @@
 #navigation {
     border: solid 2px #37A611;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -59,15 +58,13 @@
 }
 
 #topbar {
-    display: flex;
-    background-color: #353d3b;
+    display: flex; 
     color: white;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 25px;
     height: 340px;
-
-    
+    align-items: baseline;
     }
     
 #topbarL {
@@ -76,6 +73,7 @@
     width: auto;
     text-align: center;
     
+    
     }
 
 #topbarR {
@@ -83,10 +81,10 @@
     width:auto;
     font-size: 26px;
     text-align: justify;
+    border: #F1EEE6 4px;
     
 }
 
 .container img {
     border-radius: 30px;
-    border: whitesmoke 12px;
 }
