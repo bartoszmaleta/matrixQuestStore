@@ -1,0 +1,92 @@
+#navigation {
+    border: solid 2px #37A611;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    list-style: none;
+    background: #386665;
+    opacity: 0.3;
+    border-radius: 10px;
+    overflow: auto;
+    
+}
+
+#navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+#navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#navigation ul {
+    font: bold 14px arial;
+    text-transform: uppercase;
+}
+
+#navigation a:hover {
+    /* Old one */
+    /* background:rgba(255,255,255,.1); */
+    /* background: #f77e05; */
+
+    /* This works good */
+    background: #37A611;
+    box-shadow: inset 0 0 60px 1px rgba(0, 0, 0, .3);
+
+    /* Trying blast as logging button */
+    /* opacity: 1; */
+    /* background: #00FF41; */
+	color: #F1EEE6; 
+	border-radius: 5px;
+	box-shadow: 0 0 5px #00FF41,
+							 0 0 25px #00FF41,
+							 0 0 50px #00FF41,
+							 0 0 100px #00FF41;
+}
+
+#navigation li a {
+    border-radius: 25px;
+}
+
+#topbar {
+    display: flex;
+    background-color: #353d3b;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 340px;
+
+    
+    }
+    
+#topbarL {
+    display: flex;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    
+    }
+
+#topbarR {
+    padding: 20px;
+    width:auto;
+    font-size: 26px;
+    text-align: justify;
+    
+}
+
+.container img {
+    border-radius: 30px;
+    border: whitesmoke 12px;
+}

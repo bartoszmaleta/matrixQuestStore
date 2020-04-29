@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>Admin Site</title>
+  <link rel="stylesheet" href="../Public/css/menuBar.css">
+  <link rel="stylesheet" href="../Public/css/backgroundGif.css">
   <link rel="stylesheet" href="../Public/css/admin-style.css">
+
 
 </head>
 <body>
-    <div id="container"
+    <canvas id="c"></canvas>
+    <div class="container"
     
     <div id="topbar">
         <div id="topbarL" style="flex-grow:1;" >
@@ -15,13 +19,18 @@
         <div id="topbarR" style="flex-grow:4;">
             LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. ILLUD NON CONTINUO, UT AEQUE INCONTENTAE. QUAM OB REM TANDEM, INQUIT, NON SATISFACIT? IN QUA QUID EST BONI PRAETER SUMMAM VOLUPTATEM, ET EAM SEMPITERNAM? NON ENIM, SI OMNIA NON SEQUEBATUR, IDCIRCO NON ERAT ORTUS ILLINC. SED HAEC QUIDEM LIBERIUS AB EO DICUNTUR ET SAEPIUS. DUO REGES: CONSTRUCTIO INTERRETE.   
         
-
-        <div id="menu">
-            <div class="option">Create Mentor</div>
-            <div class="option">Create class</div>
-            <div class="option">Edit Mentor</div>
-            <div class="option">See Mentor</div>
-            <div class="option">Create Level EXP</div>
-        </div>
+            <div id="navigation" class="menubar">
+                <ul>
+                    <li><a href="login.html">Login Page</a></li>
+                    <li><a href="admin.html">Create Mentor</a></li>
+                    <li><a href="mentor.html">Update Class</a></li>
+                    <li><a href="mentor.html">Edit Mentor</a></li>
+                    <li><a href="mentor.html">See Mentors</a></li>
+                    <li><a href="mentor.html">Create Level</a></li>
+                </ul>
+            </div>    
+        
     </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="../Public/js/script.js"></script>
 </body>
