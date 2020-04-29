@@ -1,0 +1,8 @@
+.logoutbutton {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+}
