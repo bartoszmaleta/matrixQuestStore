@@ -67,17 +67,13 @@ p {
 }
 
 .cards {
-    /* background-color: aliceblue; */
+    margin: 3em;
     border-radius: 1em;
 
-    /* display: flex;
-    justify-content: center; */
-    /* flex-flow: row wrap;
-    row-gap: 1em; */
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    grid-gap: 2em;
     padding: 1em;
 }
 
@@ -90,20 +86,22 @@ p {
     border-radius: .5em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 15em;
-    max-width: 12em;
-    /* width: 60%; */
+    /* max-width: 50%; */
+    width: 60%;
     /* overflow: scroll; */
     background: black;
     /* background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%); */
-    /* background-color: bisque; */
 }
 
 .card-title {
     /* background-color: aqua; */
-    border-radius: 1em 1em 0 0;
+    color: white;
+    border-radius: .5em .5em 0 0;
+    line-height: 2em;
+    text-transform: uppercase;
     line-height: 2em;
 }
 
@@ -113,30 +111,81 @@ p {
     height: auto;
     text-align: center;
     padding: 15px;
-    background: aqua;
+    /* background: aqua; */
+    /* border: solid 2px #37A611; */
 }
 
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 1em;
 
 }
 
 .card-description {
-    /* font-size: 12px; */
-    width: 100%;
-    background: red;
+    /* background: red; */
+    padding: 15px;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
+    text-align: center;
+    /* margin-top: auto; */
 }
 
 .card-pillPrice {
-    background: green;
+    /* background: silver; */
+    border-radius: 0 0 .5em .5em;
     display: flex;
     justify-content: flex-end;
     width: 100%;
+
+    /* display: flex;
+    justify-content: flex-end; */
+
+    /* align-items: center; */
 }
+
+
+
+
+
+/* .object-fit_cover {
+    object-fit: cover;
+}
+
+.card-image {
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    background: aqua;
+    width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards img {
+    height: 300px;
+    /* background-color: #444; 
+} */
+
+img[class] {
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

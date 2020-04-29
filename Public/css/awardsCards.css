@@ -87,7 +87,6 @@ p {
 
 .cards {
     margin: 3em;
-    /* background-color: aliceblue; */
     border-radius: 1em;
 
     /* display: flex;
@@ -111,7 +110,7 @@ p {
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 15em;
     width: 60%;
@@ -145,7 +144,6 @@ p {
 .card-image {
     width: auto;
     height: auto;
-    /* width: auto; */
     text-align: center;
     padding: 15px;
 }
