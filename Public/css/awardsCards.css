@@ -128,19 +128,6 @@ p {
     text-shadow: 2px 2px black;
 }
 
-/* .card-content { */
-    /* background-color: aquamarine; */
-    /* width: 100%; */
-    /* display: flex; */
-/* } */
-
-.card-details {
-    /* background-color: bisque; */
-    display: flex;
-    justify-content: stretch;
-    width: 100%;
-}
-
 .card-image {
     width: auto;
     height: auto;
@@ -155,7 +142,7 @@ img {
 }
 
 .card-description {
-    padding: 15px;
+    /* padding: 15px; */
     width: 100%;
     display: flex;
     text-align: center;
@@ -163,7 +150,6 @@ img {
 }
 
 .card-pillPrice {
-
     padding: 15px;
     display: flex;
     justify-content: flex-end;
