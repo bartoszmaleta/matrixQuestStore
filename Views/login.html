@@ -1,48 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="../Public/css/login.css">
-    </head>
-    <style> 
-        audio {
-            position: absolute;
-            top: 195px;
-            left: 60px;
-            background-color: black;
-        }
-    </style>
-    <body>   
-        <canvas id="c"></canvas>
-        <audio id="player">
-            <source src="../Sounds/m.mp3" type="audio/mp3">
-        </audio>
-        <div class="login-box">
+<html lang="en">
 
-            <h2>LOGIN</h2>
-            <form action="">
-                <div class="user-box">
-                    <input type="text" name="" required="">
-                    <label>USERNAME</label>
-                </div>
-                <div class="user-box">
-                    <input type="password">
-                    <label for="">PASSWORD</label>
-                </div>
-                <a href="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    ENTER THE MATRIX
-                </a>
-            </form>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="../resoruces/icon.png">
+    <!-- <link rel="shortcut icon" href="../resoruces/background/icon2.jpg"> -->
+    <meta name="description" content="Quest Store with matrix theme">
+    <link rel="stylesheet" href="../Public/css/backgroundGif.css">
+    <link rel="stylesheet" href="../Public/css/login.css">
+    <link rel="stylesheet" href="../Public/css/menuBar.css">
+</head>
+<style>
+    audio {
+        position: absolute;
+        top: 195px;
+        left: 60px;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <audio id="player">
+        <source src="../Sounds/m.mp3" type="audio/mp3">
+    </audio>
+
+    <canvas id="c"></canvas>
+
+    <div id="navigation" class="menubar">
+        <ul>
+            <li><a href="login.html">Login Page</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="mentor.html">Mentor</a></li>
+            <li><a href="student.html">Student</a></li>
+        </ul>
+    </div>
+
+    <div class="login-box">
+        <h2>LOGIN</h2>
+        <form action="">
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>USERNAME</label>
+            </div>
+            <div class="user-box">
+                <input type="password">
+                <label for="">PASSWORD</label>
+            </div>
+            <a href="" onclick="alertMessage()">
+            <!-- <a href=""> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                ENTER THE MATRIX
+            </a>
+        </form>
+    </div>
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="../Public/js/loginScript.js"></script>
 </body>
+</html>
+
 
 <!-- <div id="navigation" class="menubar">
             <ul>
@@ -89,4 +109,3 @@
         </div>   
         </body> -->
 
-</html>

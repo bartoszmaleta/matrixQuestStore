@@ -8,13 +8,17 @@
 //     audio.addEventListener("ended", stop, false);
 // }
 
+function alertMessage() {
+    alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
+}
+
 // ------------------------------------------------------------------------------
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
-c.height = window.innerHeight;
-c.width = window.innerWidth;
+c.height = document.body.clientWidth;
+c.width = document.body.clientWidth;
 
 //chinese characters - taken from the unicode charset
 var chinese = "P.Grax Denim";
