@@ -95,7 +95,10 @@ p {
     /* width: 60%; */
     /* width: 100%; */
     /* overflow: scroll; */
+
     background: black;
+    /* background: rgba(56, 102, 101, 1); */
+
     /* background: linear-gradient(180deg, #010501 51.56%, rgba(54, 65, 54, 0) 100%); */
     /* background-color: bisque; */
 }
@@ -130,6 +133,7 @@ p {
 .card-description {
     width: 100%;
     /* background: red; */
+    font-size: 0.8em;
     display: flex;
     text-align: center;
     /* margin-top: auto; */
@@ -147,6 +151,10 @@ p {
     justify-content: flex-end; */
 
     /* align-items: center; */
+}
+
+.logoutbutton img {
+    width: 50px;
 }
 
 

@@ -153,6 +153,18 @@
 
 
 
+.logoutbutton img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+
+    width: 50px;
+}
+
+
+
+
 
 
 /* 
