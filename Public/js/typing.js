@@ -104,3 +104,5 @@ window.onkeydown = function(key){
     document.getElementById('cursor-line').className = 'visible';
   }
 };
+
+setTimeout(function(){window.location='login.html';},30000);
