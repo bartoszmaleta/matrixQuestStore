@@ -1,8 +1,8 @@
 #navigation {
     border: solid 2px #37A611;
-
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -12,6 +12,8 @@
     background: #386665;
     opacity: 0.3;
     border-radius: 10px;
+    overflow: auto;
+    
 }
 
 #navigation a {
@@ -53,4 +55,36 @@
 
 #navigation li a {
     border-radius: 25px;
+}
+
+#topbar {
+    display: flex; 
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 340px;
+    align-items: baseline;
+    }
+    
+#topbarL {
+    display: flex;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    
+    
+    }
+
+#topbarR {
+    padding: 20px;
+    width:auto;
+    font-size: 26px;
+    text-align: justify;
+    border: #F1EEE6 4px;
+    
+}
+
+.container img {
+    border-radius: 30px;
 }
