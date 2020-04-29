@@ -204,3 +204,9 @@ img {
 
     color: white;
 }
+
+.logo {
+    text-shadow: black;
+    color: blanchedalmond;
+    text-align: center;
+}
