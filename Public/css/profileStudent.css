@@ -19,6 +19,26 @@
     font-size: 20px;
 }
 
+.profileContent2 {
+    color: white;
+    width: 10%;
+    /* min-width: 28em;
+    max-width: 700px; */
+    /* background-color: #495B66; */
+    border: solid 2px #37A611;
+    background: rgba(56, 102, 101, 0.5);
+
+    margin: 0px auto 0 auto;    
+    border-radius: 10px;
+    padding: 1.5em;
+    /* box-sizing: border-box; */
+    /* -moz-box-sizing: border-box;  */
+    /* -webkit-box-sizing: border-box; */
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    font-size: 20px;
+}
+
 
 /* .content h1 {
     margin: 0 0 5px 0;
