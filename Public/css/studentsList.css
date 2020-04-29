@@ -15,13 +15,14 @@
     border: solid 1px #DDEEEE;
     color: #0d0208;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     
 }
 .zui-table tbody td {
     border: solid 1px #DDEEEE;
-    color: #333;
+    color: #0d0208;
     padding: 10px;
-    background-color: #008f11;
+    background-image: linear-gradient(to bottom, #003b00, #008f11);
+    text-align: center;
    
 }
