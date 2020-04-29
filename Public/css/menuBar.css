@@ -8,8 +8,9 @@
     margin-bottom: 5%;
     
     list-style: none;
-    background: #386665;
-    opacity: 0.35;
+    /* background: #386665; */
+    background: rgba(56, 102, 101, 0.5);
+    /* opacity: 0.35; */
     border-radius: 10px;
     overflow: auto;
     
@@ -30,6 +31,7 @@
 #navigation ul {
     font: bold 14px arial;
     text-transform: uppercase;
+    padding: 0;
 }
 
 #navigation a:hover {
