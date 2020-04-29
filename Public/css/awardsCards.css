@@ -87,6 +87,7 @@ p {
 
 .cards {
     margin: 3em;
+    margin-top: 0em;
     border-radius: 1em;
 
     /* display: flex;

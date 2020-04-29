@@ -1,4 +1,10 @@
-.headlineQuest {
+.headlineLogo {
+    display: flex;
+    justify-content: center;
+    /* padding: 2em; */
+}
+
+.headlineMainLogo {
     display: flex;
     justify-content: center;
     /* padding: 2em; */

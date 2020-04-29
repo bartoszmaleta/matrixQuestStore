@@ -90,6 +90,12 @@
     padding-bottom: 0.5em;
 }
 
+.profile-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5em;
+}
+
 /* .profile-left h2 {
     font-size: 0.6em;
 } */
