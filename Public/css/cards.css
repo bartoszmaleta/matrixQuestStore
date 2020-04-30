@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll; */
     color: #37A611;
+    background: black;
 }
 
 * {
@@ -105,7 +106,7 @@ p {
 
 .card-title {
     /* background-color: aqua; */
-    color: white;
+    /* color: white; */
     margin-top: 0.2em;
     border-radius: .5em .5em .5em .5em;
     line-height: 2em;
