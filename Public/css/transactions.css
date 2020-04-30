@@ -1,0 +1,91 @@
+/* table#transactions-table{
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#transactions-table{
+    margin: 25px 0;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    text-align: center;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    border-radius: 1em;
+    overflow: hidden;
+
+}
+
+#transactions-table tr{
+    background-color: #768993;
+    border-bottom:1px solid #dddddd;
+}
+
+#transactions-table tr th{
+    background-color: #303D44;
+    font-weight: bold;
+}
+
+
+#transactions-table th,
+#transactions-table tr{
+    padding: 12px 15px;
+}
+#transactions-table tr:last-of-type{
+    border-bottom:1px solid #303D44;
+}
+
+#transactions-table tr td:hover {
+    background: yellow;
+}  */
+
+table {
+    display: flex;
+    justify-content: center;
+    color: rgb(231, 230, 230);
+}
+
+td, th {
+    /* width: 8em; */
+    width: auto;
+    height: auto;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+td {
+    background: rgb(5, 85, 5)
+}
+
+th {
+    font-weight: normal;
+    text-transform: uppercase;
+    background: rgb(26, 54, 54);
+    border-color: white;
+}
+
+/* td:hover {
+    background: yellow;
+    
+} */
+
+tr:hover, td:hover, th:hover {
+    background: rgb(2, 199, 52);
+    box-shadow: 0 0 5px #00FF41,
+    0 0 25px #00FF41,
+    0 0 50px #00FF41,
+    0 0 100px #00FF41;
+
+}
+
+/* tbody tr:hover {
+    background: yellow;
+    
+} */
+
+/* body {
+    padding: 1rem;
+} */
