@@ -41,3 +41,12 @@
 .zui-table tbody td:hover {
     background-color: #00ff41;
 } 
+
+.logoutbutton img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+
+    width: 50px;
+}
