@@ -3,54 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Quests</title>
     <link rel="shortcut icon" href="../resoruces/icon.png">
     <meta name="description" content="Quest Store with matrix theme">
-    <link rel="stylesheet" href="../../Public/css/cards.css">
-    <link rel="stylesheet" href="../../Public/css/menuBar.css">
-    <link rel="stylesheet" href="../../Public/css/backgroundGif.css">
-    <link rel="stylesheet" href="../../Public/css/headline.css">
-    <link rel="stylesheet" href="../../Public/css/profileStudent.css">
-    <link rel="stylesheet" href="../../Public/css/logoutButton.css">
+    <link rel="stylesheet" href="../Public/css/cards.css">
+    <link rel="stylesheet" href="../Public/css/logoutButton.css">
+    <link rel="stylesheet" href="../Public/css/menuBar.css">
+    <link rel="stylesheet" href="../Public/css/backgroundGif.css">
+    <link rel="stylesheet" href="../Public/css/headline.css">
+    <link rel="stylesheet" href="../Public/css/logoutButton.css">
+    <link rel="stylesheet" href="../Public/css/profileStudent.css">
 
 </head>
-<!-- justToCommit -->
-<!-- justToCommit new branch -->
 
 <body>
     <canvas id="c"></canvas>
 
     <div class="container">
-
+        <!-- 
         <div class="logoutbutton">
             <a href="../login.html"><img src="../../resoruces/logoutbutton.png"></img></a>
-        </div>
+        </div> -->
 
         <div class="headlineMainLogo">
-            <img src="../../resoruces/headline/mainHeadline.png">
+            <img src="../resoruces/headline/mainHeadline.png">
         </div>
 
         <div id="navigation" class="menubar">
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="quests.html">Quests</a></li>
-                <li><a href="awards.html">Awards</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="admin/homepage.html">Admin</a></li>
+                <li><a href="mentor/homepage.html">Mentor</a></li>
+                <li><a href="student/homepage.html">Student</a></li>
+                <li><a href="login.html">Login page</a></li>
             </ul>
         </div>
 
-
         <div class="headlineLogo">
-            <img src="../../resoruces/headline/profile.png">
+            <img src="../resoruces/headline/register.png">
         </div>
+
 
         <div class="profileContent">
             <!-- <h1>profile</h1> -->
             <div class="profile">
                 <div class="profile-left">
                     <!-- <img src="../../resoruces/studentLogo/exampleStudent.png" width="200" height="210"> -->
-                    <img src="../../resoruces/studentLogo/exampleStudent.png">
+                    <img src="../resoruces/studentLogo/defaultLogo.png">
                     <div class="toEditLink">
                         <h2><a href="#">Edit picture</a></h2>
                     </div>
@@ -60,19 +59,19 @@
                         <h2>personal information</h2>
                         <tr>
                             <td class="profile-setting">USERNAME:</td>
-                            <td class="user-entry">neoTheOne</td>
+                            <td class="user-entry"><input type="text" placeholder="Username"></td>
                         </tr>
                         <tr>
                             <td class="profile-setting">NAME:</td>
-                            <td class="user-entry">Thomas</td>
+                            <td class="user-entry"><input type="text" placeholder="name"></td>
                         </tr>
                         <tr>
                             <td class="profile-setting">SURNAME:</td>
-                            <td class="user-entry">Anderson</td>
+                            <td class="user-entry"><input type="text" placeholder="surname"></td>
                         </tr>
                         <tr>
                             <td class="profile-setting">BIRTH DATE:</td>
-                            <td class="user-entry">13.09.2162</td>
+                            <td class="user-entry"><input type="text" placeholder="Birth date"></td>
                         </tr>
                     </table>
                     <table style="width:100%">
@@ -80,15 +79,15 @@
                         <h2>contact</h2>
                         <tr>
                             <td class="profile-setting">PHONE NUMBER:</td>
-                            <td class="user-entry">+48 789 456 123</td>
+                            <td class="user-entry"><input type="text" placeholder="Phone"></td>
                         </tr>
                         <tr>
                             <td class="profile-setting">E-MAIL:</td>
-                            <td class="user-entry">neo@zion.com</td>
+                            <td class="user-entry"><input type="text" placeholder="E-mail"></td>
                         </tr>
                         <tr>
                             <td class="profile-setting">GITHUB:</td>
-                            <td class="user-entry">github.com/neo</td>
+                            <td class="user-entry"><input type="text" placeholder="Github"></td>
                         </tr>
                     </table>
                     <table style="width:100%">
@@ -96,12 +95,12 @@
                         <h2>codecool</h2>
                         <tr>
                             <td class="profile-setting">MODULE:</td>
-                            <td class="user-entry"><a href="#">html/css/js</a></td>
+                            <td class="user-entry"><input type="text" placeholder="Module"></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="profile-setting">PERSONAL MENTOR:</td>
-                            <td class="user-entry"><a href="#">Morpheus</a></td>
-                        </tr>
+                            <td class="user-entry"><input type="text" placeholder="Login"></td>
+                        </tr> -->
                     </table>
                     <table style="width:100%">
                         <h2>
@@ -115,49 +114,17 @@
             </div>
         </div>
 
-        <div class="profileContent2">
-            <!-- <div class="walletHeadline"><h1>Wallet</h1></div> -->
-            <div class="walletHeadline">Wallet</div>
-            <table class="wallet-content">
-                <tr>
-                    <td>TOTAL COINS:</td>
-                    <td>753</td>
-                </tr>
-            </table>
-        </div>
+
+
     </div>
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="../../Public/js/script2.js"></script>
+    <script src="../Public/js/script2.js"></script>
 </body>
 
 </html>
-<!-- 
-<div class="containerProfile">
-    <div class="amd-app">
-      <div class="amd-intro">
-        <h3 class="text-center"><i class="fas fa-chevron-left"></i> Settings</h3>
-        <hr>
-      </div>
-      <div class="amd-info text-center">
-        <h4>Name:</h4>
-        <p>Sara Miller</p>
-        
-        <h4>Address:</h4>
-        <p>222 Laura Lane</br>
-        Atlanta, GA 30324</p>
-      
-        <h4>Number:</h4>
-        <p>555-555-5555</p>
-    
-        <h4>Email:</h4>
-        <p>sara.miller@email.co</p>
-    <div class="amd-action text-center">
-      <button class="btn btn-primary">Update Account</button></br>
-      <button class="btn btn-danger">Delete Account</button>
-    </div>
-    
-      </div>
-      
-    </div>
-  </div> -->
+
+
+<!-- <img src="https://crossweb.pl/job/wp-content/uploads/2016/06/codecool.png"> -->
+<!-- <img src="../podium.jpg"> -->
+<!-- <img src="https://speakertoanimals.files.wordpress.com/2011/09/matrix-reloaded-trio.jpg?w=648"> -->
