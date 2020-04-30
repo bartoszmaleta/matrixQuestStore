@@ -15,6 +15,11 @@ function alertMessage() {
     alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
  }
 
+ function registerUser() {
+    alert("If there was a backend You would be register in right now (probably). Try this button after May 1st 2020, hopefully...");
+    // prompt("qweqwe")
+}
+
 // ------------------------------------------------------------------------------
 
 var c = document.getElementById("c");
