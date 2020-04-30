@@ -24,6 +24,12 @@ function notYetReady() {
     alert("Not yet ready!");
 }
 
+function addCard() {
+    const cards = document.querySelector(".cards");
+    const card = document.querySelectorAll(".card").item(0);
+    cards.appendChild(card.cloneNode(true));
+}
+
 // ------------------------------------------------------------------------------
 
 var c = document.getElementById("c");

@@ -161,6 +161,8 @@ p {
 
 
 
+
+
 /* .object-fit_cover {
     object-fit: cover;
 }
@@ -229,4 +231,20 @@ img[class] {
     align-items: center;
 
     color: white;
+}
+
+.adbb img {
+    width: 50px;
+
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    /* width: 2em; */
+    /* height: 2em; */
+    /* border-radius: 1em; */
+    /* background-color: black; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: white; */
 }
