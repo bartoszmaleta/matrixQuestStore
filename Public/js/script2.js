@@ -20,6 +20,10 @@ function alertMessage() {
     // prompt("qweqwe")
 }
 
+function notYetReady() {
+    alert("Not yet ready!");
+}
+
 // ------------------------------------------------------------------------------
 
 var c = document.getElementById("c");
