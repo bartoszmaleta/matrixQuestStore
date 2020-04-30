@@ -126,9 +126,21 @@
 
 .profile-right tr {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .walletHeadline {
     font-size: 3em;

@@ -11,6 +11,25 @@ function showStudents() {
     window.location="./students.html"
 }
 
+function alertMessage() {
+    alert("If there was a backend You would be logging in right now (probably). Try this button after May 1st 2020, hopefully...");
+ }
+
+ function registerUser() {
+    alert("If there was a backend You would be register in right now (probably). Try this button after May 1st 2020, hopefully...");
+    // prompt("qweqwe")
+}
+
+function notYetReady() {
+    alert("Not yet ready!");
+}
+
+function addCard() {
+    const cards = document.querySelector(".cards");
+    const card = document.querySelectorAll(".card").item(0);
+    cards.appendChild(card.cloneNode(true));
+}
+
 // ------------------------------------------------------------------------------
 
 var c = document.getElementById("c");
@@ -21,7 +40,7 @@ c.height = document.body.clientWidth;
 c.width = document.body.clientWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "P.Grax Denim";
+var chinese = "Aleksandra. Bartosz- Micha";
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
