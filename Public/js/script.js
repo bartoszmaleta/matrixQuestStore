@@ -34,8 +34,12 @@ c.height = document.body.clientWidth;
 c.width = document.body.clientWidth;
 
 //chinese characters - taken from the unicode charset
+<<<<<<< HEAD
 // var chinese = "P.Grax Denim";
 var chinese = "Aleksandra. Bartosz- Michal";
+=======
+var chinese = "010101010101010101011";
+>>>>>>> origin/LastVersion
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
