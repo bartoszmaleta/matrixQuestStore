@@ -50,3 +50,13 @@
 
     width: 50px;
 }
+
+/* body {
+    background-color: black;
+} */
+
+body {
+    /* font-size: 24px; */
+    background: black;
+    font-family: 'Arial', sans-serif;
+}
