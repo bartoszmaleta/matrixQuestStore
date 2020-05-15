@@ -7,3 +7,9 @@ canvas {
     z-index: -1;
     width: 100%;
 }
+
+body {
+    /* font-size: 24px; */
+    background: black;
+    font-family: 'Arial', sans-serif;
+}
