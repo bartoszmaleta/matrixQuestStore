@@ -11,6 +11,13 @@ body {
 	background: black;	
 }
 
+audio {
+	position: absolute;
+	top: 195px;
+	left: 60px;
+	background-color: black;
+}
+
 /* canvas {
     display: block;
     position: absolute;
