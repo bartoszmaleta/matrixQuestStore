@@ -37,6 +37,7 @@ table, tr {
 table > tr:hover {
     background: rgba(54, 177, 86, 0.64);
     box-shadow: 0 0 5px rgba(54, 177, 86, 0.64);
+    color: white;
 }
 
 td {
