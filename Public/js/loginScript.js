@@ -74,17 +74,16 @@ function draw() {
 }
 
 setInterval(draw, 33);
+function play () {}
+// sound -----------------> UNCOMMENT TO HAVE SOUND
+// function play() {
 
-// sound 
-function play() {
-
-    var audio = new Audio('../Sounds/m.mp3');
-    audio.loop = true;
-    audio.play().then(function(e) {
-        clearInterval(musicIntervalId);
-    });
-
-}
+//     var audio = new Audio('../Sounds/m.mp3');
+//     audio.loop = true;
+//     audio.play().then(function(e) {
+//         clearInterval(musicIntervalId);
+//     });
+// }
 
 var musicIntervalId = setInterval(play, 500);
 

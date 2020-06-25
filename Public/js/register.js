@@ -18,6 +18,7 @@ function setUser(data) {
         })
         .then(function (response) {
             console.log(response);
+            console.log(data);
         });
 }
 

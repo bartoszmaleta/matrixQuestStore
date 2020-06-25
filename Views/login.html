@@ -11,9 +11,20 @@
     <link rel="stylesheet" href="../Public/css/backgroundGif.css">
     <link rel="stylesheet" href="../Public/css/login.css">
     <link rel="stylesheet" href="../Public/css/menuBar.css">
+
+    <!-- environment.js must be above all scripts!!!!!!!! -->
+    <script src="../../Public/js/environment.js" defer></script>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' defer></script>
+    <script src="../Public/js/loginForm.js" defer></script>
+    <script src="../Public/js/loginScript.js" defer></script>
 </head>
 
 <body>
+ <!-- sound ----------------- UNCOMMENT loginScript.js 
+    function play() TO HAVE SOUND -->
+   
     <!-- UNCOMMENT TO HAVE AUDIO ON LOGIN PAGE!!!!!!!!!!!!!!!!! -->
     <!-- <audio id="player">
         <source src="../Sounds/m.mp3" type="audio/mp3">
@@ -33,13 +44,13 @@
 
     <div class="login-box">
         <h2>LOGIN</h2>
-        <form action="">
+        <form action="" id="login-form">
             <div class="user-box">
-                <input type="text" name="" required="">
+                <input type="text" name="email" required="">
                 <label>USERNAME</label>
             </div>
             <div class="user-box">
-                <input type="password">
+                <input type="password" name="password">
                 <label for="">PASSWORD</label>
             </div>
             <a href="#" onclick="alertMessage()">
@@ -49,11 +60,14 @@
                 <span></span>
                 <span></span>
                 ENTER THE MATRIX
+
             </a>
+                <button>SEND</button>
+
         </form>
     </div>
+    <div class="user-container"></div>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="../Public/js/loginScript.js"></script>
+
 </body>
 </html>
