@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
 function getMentors() {
-    fetch(`http://localhost:8003/mentors`)
+    fetch(`${apiUrl}/mentors`)
         .then(function(response){
             return response.json();
         })
