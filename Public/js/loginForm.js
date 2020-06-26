@@ -10,6 +10,9 @@ form.addEventListener('submit', function (e) {
 
     getUser(data);
 });
+function clicking() {
+    
+}
 
 function getUser(data) {
     fetch(`${apiUrl}/login)`,
@@ -32,12 +35,35 @@ function getUser(data) {
         console.log(user);
         console.log("name:");
         console.log(user.name);
-
+        console.log(user.role);
+        console.log(user.id);
+        if (user.role == 'ADMIN') {
+            console.log('I am admin');
+            sessionStorage.setItem('id', user.id);
+            sessionStorage.setItem('role', user.role)
+            window.location.replace("admin/homepage.html");
+        } else if (user.role == 'MENTOR') {
+            console.log('I am mentor');
+            sessionStorage.setItem('id', user.id);
+            sessionStorage.setItem('role', user.role)
+            window.open("mentor/homepage.html");
+        } else if (user.role == 'STUDENT') {
+            console.log('I am student');
+            sessionStorage.setItem('id', user.id);
+            sessionStorage.setItem('role', user.role)
+            window.open("student/homepage.html");
+        } else {
+            console.log('I am noone!')
+        }
         // displayUser(user)
     });
 
 }
+// function displayUser(loggedUser) {
+//     prompt(loggedUser.name);
+// }
 
-function displayUser(user) {
-    prompt(user.name);
-}
+sessionStorage.setItem('name', 'Bob');
+sessionStorage.getItem('name');
+console.log(sessionStorage.getItem('name'));
+// localStorage.removeItem('name');

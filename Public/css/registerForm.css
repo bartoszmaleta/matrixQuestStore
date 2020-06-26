@@ -155,9 +155,9 @@
 }
 
 .toEditLink2 {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 
