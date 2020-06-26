@@ -19,6 +19,8 @@ function innerMentors(mentors) {
 
     mentors.forEach(mentor => {
         let row = document.createElement("tr");
+        // TODO: should be in loop
+        // row.append(column);
         row.innerHTML = `
             <td>${mentor.id}</td>
             <td>${mentor.name}</td>
