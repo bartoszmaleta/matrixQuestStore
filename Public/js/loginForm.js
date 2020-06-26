@@ -63,7 +63,9 @@ function getUser(data) {
 //     prompt(loggedUser.name);
 // }
 
-sessionStorage.setItem('name', 'Bob');
-sessionStorage.getItem('name');
-console.log(sessionStorage.getItem('name'));
+
+// TRAINING storages
+// sessionStorage.setItem('name', 'Bob');
+// sessionStorage.getItem('name');
+// console.log(sessionStorage.getItem('name'));
 // localStorage.removeItem('name');
