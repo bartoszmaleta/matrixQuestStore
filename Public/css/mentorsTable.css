@@ -33,7 +33,6 @@ table, tr {
     padding: 10px;
 }
 
-
 table > tr:hover {
     background: rgba(54, 177, 86, 0.64);
     box-shadow: 0 0 5px rgba(54, 177, 86, 0.64);
@@ -42,7 +41,6 @@ table > tr:hover {
 td {
     border: solid 1px #37A611;
 }
-
 
 .logo {
     text-shadow: black;
