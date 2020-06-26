@@ -35,10 +35,8 @@ table, tr {
 
 table > tr:hover {
     background: rgba(54, 177, 86, 0.64);
-    box-shadow: 0 0 5px rgba(54, 177, 86, 0.64),
-    0 0 25px rgba(0, 255, 65, 0.29),
-    0 0 50px rgba(0, 255, 65, 0.43),
-    0 0 100px rgba(0, 255, 65, 0.51);
+    box-shadow: 0 0 5px rgba(54, 177, 86, 0.64);
+    color: white;
 }
 
 td {
