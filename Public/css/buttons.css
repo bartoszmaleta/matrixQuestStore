@@ -1,0 +1,10 @@
+.login-box button {
+    background: none;
+    border: none;
+}
+
+#register-form button {
+    background: none;
+    border: none;
+    font-size: 0.5em;
+}

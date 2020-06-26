@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Public/css/backgroundGif.css">
     <link rel="stylesheet" href="../Public/css/login.css">
     <link rel="stylesheet" href="../Public/css/menuBar.css">
+    <link rel="stylesheet" href="../Public/css/buttons.css">
 
     <!-- environment.js must be above all scripts!!!!!!!! -->
     <script src="../../Public/js/environment.js" defer></script>
@@ -22,9 +23,9 @@
 </head>
 
 <body>
- <!-- sound ----------------- UNCOMMENT loginScript.js 
+    <!-- sound ----------------- UNCOMMENT loginScript.js 
     function play() TO HAVE SOUND -->
-   
+
     <!-- UNCOMMENT TO HAVE AUDIO ON LOGIN PAGE!!!!!!!!!!!!!!!!! -->
     <!-- <audio id="player">
         <source src="../Sounds/m.mp3" type="audio/mp3">
@@ -53,21 +54,30 @@
                 <input type="password" name="password">
                 <label for="">PASSWORD</label>
             </div>
-            <a href="#" onclick="alertMessage()">
-            <!-- <a href=""> -->
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                ENTER THE MATRIX
-
-            </a>
-                <button>SEND</button>
-
+            <!-- <a href="#" onclick="alertMessage()"> -->
+            <button>
+                <a>
+                    <!-- <a href=""> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    ENTER THE MATRIX
+                </a>
+            </button>
         </form>
     </div>
     <div class="user-container"></div>
 
 
 </body>
+
 </html>
+
+<!-- TODO:
+    - hashing password
+    - stats of user (mentor, student)
+    - to session: id and role
+    - submit image
+    - receive image
+    - fill the profile Page -->

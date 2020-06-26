@@ -6,6 +6,7 @@
     <title>Quests</title>
     <link rel="shortcut icon" href="../resoruces/icon.png">
     <meta name="description" content="Quest Store with matrix theme">
+
     <link rel="stylesheet" href="../Public/css/cards.css">
     <link rel="stylesheet" href="../Public/css/logoutButton.css">
     <link rel="stylesheet" href="../Public/css/menuBar.css">
@@ -13,6 +14,9 @@
     <link rel="stylesheet" href="../Public/css/headline.css">
     <link rel="stylesheet" href="../Public/css/logoutButton.css">
     <link rel="stylesheet" href="../Public/css/registerForm.css">
+
+    <link rel="stylesheet" href="../Public/css/buttons.css">
+
 
     <script src="../../Public/js/environment.js" defer></script>
 
@@ -75,7 +79,7 @@
                                 <td class="user-entry"><input type="text" placeholder="Username" name="login"></td>
                             </tr>
                             <tr>
-                                <td class="user-entry"><input type="text" placeholder="password" name="password"></td>
+                                <td class="user-entry"><input type="passoword" placeholder="password" name="password"></td>
                             </tr>
                             <tr>
                                 <td class="user-entry"><input type="text" placeholder="name" name="name"></td>
@@ -83,7 +87,8 @@
                             <tr>
                                 <td class="user-entry"><input type="text" placeholder="surname" name="surname"></td>
                             </tr>
-                            <tr>
+                            <tr> 
+                                <!-- (1 - Admin, 2 - Mentor, 3 - Student) -->
                                 <td class="user-entry"><input type="text" placeholder="Role" name="role"></td>
                             </tr>
                             <tr>
@@ -94,7 +99,7 @@
                             <br>
                             <h2>contact</h2>
                             <tr>
-                                <td class="user-entry"><input type="text" placeholder="E-mail" name="email"></td>
+                                <td class="user-entry"><input type="email" placeholder="E-mail" name="email"></td>
                             </tr>
                             <!-- TODO -->
                             <!-- <tr>
@@ -113,12 +118,12 @@
                         </tr>
                     </table> -->
                         <table style="width:100%">
-                            <button>SEND</button>
+                            <!-- <button>SEND</button> -->
                             <h2>
-                                <div class="toEditLink2">
+                                <button><div class="toEditLink2">
                                     <!-- How to align center???? -->
-                                    <a href="#" onclick="registerUser()">SUBMIT</a>
-                                </div>
+                                    <a>SUBMIT</a>
+                                </div></button>
                             </h2>
                         </table>
                     </form>

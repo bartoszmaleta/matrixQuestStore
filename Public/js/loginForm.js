@@ -10,6 +10,9 @@ form.addEventListener('submit', function (e) {
 
     getUser(data);
 });
+function clicking() {
+    
+}
 
 function getUser(data) {
     fetch(`${apiUrl}/login)`,
@@ -32,12 +35,23 @@ function getUser(data) {
         console.log(user);
         console.log("name:");
         console.log(user.name);
-
+        console.log(user.role);
+        if (user.role == 'ADMIN') {
+            console.log('I am admin');
+            window.open("admin/homepage.html");
+        } else if (user.role == 'MENTOR') {
+            console.log('I am mentor');
+            window.open("mentor/homepage.html");
+        } else if (user.role == 'STUDENT') {
+            console.log('I am student');
+            window.open("student/homepage.html");
+        } else {
+            console.log('I am noone!')
+        }
         // displayUser(user)
     });
 
 }
-
-function displayUser(user) {
-    prompt(user.name);
-}
+// function displayUser(loggedUser) {
+//     prompt(loggedUser.name);
+// }
