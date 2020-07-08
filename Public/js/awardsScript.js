@@ -28,6 +28,8 @@ function innerAwards(awards) {
         let cardImage = document.createElement("div");
         cardImage.className = "card-image";
         let img = document.createElement("img");
+        console.log('img src award');
+        console.log(award.imageSrc);
         img.src = "../../resoruces/awardLogo/" + award.imageSrc;
         cardImage.appendChild(img);
 
