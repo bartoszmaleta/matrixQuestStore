@@ -83,7 +83,6 @@ canvas {
 .card-description {
     margin-top: 40px;
     width: 100%;
-    display: flex;
     text-align: center;
     color: #37A611;
 }
