@@ -51,7 +51,7 @@ function innerAwards(awards) {
         cardElement.appendChild(cardImage);
         cardElement.appendChild(cardDescription);
         cardElement.appendChild(cardPills);
-        cardElement.appendChild(closeButton);
+        // cardElement.appendChild(closeButton);
         cards.appendChild(cardElement);
         container.appendChild(cards);
 
