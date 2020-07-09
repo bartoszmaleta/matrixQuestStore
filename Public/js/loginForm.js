@@ -24,7 +24,7 @@ function getUser(data) {
         if (user === null) {
             console.log('null');
         }
-        user === null ? console.log('null') : saveDetailsToSession(user);
+        user === null ? location.reload() : saveDetailsToSession(user);
         window.location.replace(`${user.role.toLowerCase()}/homepage.html`);
     });
 }
