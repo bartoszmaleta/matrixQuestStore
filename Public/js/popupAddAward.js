@@ -35,3 +35,16 @@ function closeModal(modal) {
     modal.classList.remove('active');
     overlay.classList.remove('active');
 }
+
+function createSubmitButton() {
+    let tbody = document.querySelector("tbody");
+    let button = document.createElement("button");
+    let a = document.createElement("a");
+    a.innerText = "SUBMIT";
+
+    button.appendChild(a);
+    tbody.appendChild(button);
+}
+
+
+createSubmitButton();

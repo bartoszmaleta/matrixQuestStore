@@ -62,7 +62,11 @@
         </div>
 
 
-        <button data-modal-target="#modal">Open add award modal</button>
+        <button data-modal-target="#modal">
+            <div class="adbb" onclick="addCard()">
+                <img src="../../resoruces/icons/plus.png"></img>
+            </div>
+        </button>
         <div class="modal" id="modal">
             <div class="modal-header">
                 <div class="title">Add award</div>
@@ -86,16 +90,15 @@
                         <tr>
                             <td class="user-entry"><input type="text" placeholder="Price" name="price"></td>
                         </tr>
-                    </table>
+                        
 
+                    </table>
+                    
+                    <!-- <button class="toEditLink2">
+                        <a>SUBMIT</a>
+                    </button> -->
                     <table style="width:100%">
-                        <h2>
-                            <button>
-                                <div class="toEditLink2">
-                                    <a>SUBMIT</a>
-                                </div>
-                            </button>
-                        </h2>
+                
                     </table>
                 </form>
             </div>
