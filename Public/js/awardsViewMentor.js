@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const container = document.querySelector(".container-awards");
 
 function getAwards() {
     fetch(`http://localhost:8003/awards`)
@@ -44,6 +44,7 @@ function innerAwards(awards) {
         closeButton.className = "close-button";
         closeButton.innerText = "x";
         closeButton.id = "card-close-button";
+        addEventDeleteToCard(closeButton); // mine
 
         cardPills.innerText = "cost: " + award.price + " p";
 
@@ -62,3 +63,9 @@ function innerAwards(awards) {
 
 getAwards();
 
+function addEventDeleteToCard(button) {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('x button!!!');
+    });
+}
