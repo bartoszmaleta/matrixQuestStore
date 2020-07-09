@@ -97,6 +97,21 @@ canvas {
     color: #37A611;
 }
 
+.card > .close-button {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    border: none;
+    background-color: black;
+    color: #37A611;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.card > .close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 500px){
