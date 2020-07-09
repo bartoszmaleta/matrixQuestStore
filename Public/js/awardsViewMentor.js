@@ -24,6 +24,7 @@ function innerAwards(awards) {
         let cardTitle = document.createElement("div");
         cardTitle.className = "card-title";
         cardTitle.innerText = award.title;
+        console.log(award.id);
 
         let cardImage = document.createElement("div");
         cardImage.className = "card-image";
@@ -43,8 +44,8 @@ function innerAwards(awards) {
         let closeButton = document.createElement("button");
         closeButton.className = "close-button";
         closeButton.innerText = "x";
-        closeButton.id = "card-close-button";
-        addEventDeleteToCard(closeButton); // mine
+        // closeButton.id = "card-close-button";
+        addEventDeleteToCard(closeButton, award.id); // adds event to delete buttons!
 
         cardPills.innerText = "cost: " + award.price + " p";
 
@@ -63,9 +64,31 @@ function innerAwards(awards) {
 
 getAwards();
 
-function addEventDeleteToCard(button) {
+function addEventDeleteToCard(button, cardId) {
     button.addEventListener('click', function (e) {
         e.preventDefault();
+        console.log(cardId);
+
+        let mentorId = sessionStorage.getItem("id");
+        const idOfCardToDelete = `id=${cardId}&mentorsId=${mentorId}`;
+        deleteCard(idOfCardToDelete);
+
+
         console.log('x button!!!');
     });
+}
+
+function deleteCard(data) {
+    console.log(data);
+    fetch("http://localhost:8003/mentors/deleteAward",
+        {
+            // mode: 'no-cors',
+            method: "POST",
+            body: data
+        })
+        .then(function (response) {
+            console.log(response);
+            console.log(data);
+            location.reload();
+        });
 }

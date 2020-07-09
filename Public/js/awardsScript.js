@@ -40,10 +40,10 @@ function innerAwards(awards) {
         let cardPills = document.createElement("div");
         cardPills.className = "card-pillPrice";
 
-        let closeButton = document.createElement("button");
-        closeButton.className = "close-button";
-        closeButton.innerText = "x";
-        closeButton.id = "card-close-button";
+        // let closeButton = document.createElement("button");
+        // closeButton.className = "close-button";
+        // closeButton.innerText = "x";
+        // closeButton.id = "card-close-button";
 
         cardPills.innerText = "cost: " + award.price + " p";
 
