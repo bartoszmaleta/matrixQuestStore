@@ -21,24 +21,9 @@ function getUser(data) {
         return user;
     })
     .then(function (user) {
-        if (user.role == 'ADMIN') {
-            console.log('I am admin');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("admin/homepage.html");
-        } else if (user.role == 'MENTOR') {
-            console.log('I am mentor');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("mentor/homepage.html");
-        } else if (user.role == 'STUDENT') {
-            console.log('I am student');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("student/homepage.html");
-        } else {
-            console.log('I am noone!')
-        }
+        sessionStorage.setItem('id', user.id);
+        sessionStorage.setItem('role', user.role)
+        window.location.replace(`${user.role.toLowerCase()}/homepage.html`);
     });
 }
 
