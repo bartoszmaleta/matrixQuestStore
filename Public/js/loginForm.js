@@ -21,10 +21,17 @@ function getUser(data) {
         return user;
     })
     .then(function (user) {
-        sessionStorage.setItem('id', user.id);
-        sessionStorage.setItem('role', user.role)
+        if (user === null) {
+            console.log('null');
+        }
+        user === null ? console.log('null') : saveDetailsToSession(user);
         window.location.replace(`${user.role.toLowerCase()}/homepage.html`);
     });
+}
+
+function saveDetailsToSession(loggedUser) {
+    sessionStorage.setItem('id', loggedUser.id);
+    sessionStorage.setItem('role', loggedUser.role);
 }
 
 
