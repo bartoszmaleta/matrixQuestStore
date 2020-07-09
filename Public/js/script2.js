@@ -41,7 +41,7 @@ c.height = document.documentElement.scrollHeight;
 c.width = document.documentElement.scrollWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "Aleksandra. Bartosz- Micha";
+var chinese = "Aleksandra. Bartosz-";
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
