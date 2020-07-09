@@ -21,25 +21,17 @@ function getUser(data) {
         return user;
     })
     .then(function (user) {
-        if (user.role == 'ADMIN') {
-            console.log('I am admin');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("admin/homepage.html");
-        } else if (user.role == 'MENTOR') {
-            console.log('I am mentor');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("mentor/homepage.html");
-        } else if (user.role == 'STUDENT') {
-            console.log('I am student');
-            sessionStorage.setItem('id', user.id);
-            sessionStorage.setItem('role', user.role)
-            window.location.replace("student/homepage.html");
-        } else {
-            console.log('I am noone!')
+        if (user === null) {
+            console.log('null');
         }
+        user === null ? location.reload() : saveDetailsToSession(user);
+        window.location.replace(`${user.role.toLowerCase()}/homepage.html`);
     });
+}
+
+function saveDetailsToSession(loggedUser) {
+    sessionStorage.setItem('id', loggedUser.id);
+    sessionStorage.setItem('role', loggedUser.role);
 }
 
 
