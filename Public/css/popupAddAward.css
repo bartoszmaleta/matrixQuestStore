@@ -60,6 +60,7 @@ input {
     justify-content: center;
     align-items: center;
     align-content: center;
+    color: white;
 }
 
 
@@ -109,3 +110,7 @@ tbody {
     align-items: center;
 }
 
+button {
+    background-color: black;
+    border: none;
+}

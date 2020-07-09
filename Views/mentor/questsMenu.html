@@ -24,9 +24,9 @@
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" defer></script>
     <script src="../../Public/js/script2.js" defer></script>
-    <script src="../../Public/js/addAward.js" defer></script>
+    <script src="../../Public/js/addQuest.js" defer></script>
     <script src="../../Public/js/popupAddAward.js" defer></script>
-    <script src="../../Public/js/awardsViewMentor.js" defer></script>
+    <script src="../../Public/js/questsViewMentor.js" defer></script>
     <script src="../../Public/js/awardDeleteButtons.js" defer></script>
 
 
@@ -51,14 +51,14 @@
                 <li><a href="studentsTable.html">Students menu</a></li>
                 <li><a href="#" onclick="notYetReady()">Module menu</a></li>
                 <li><a href="awardsMenu.html">Awards menu</a></li>
-                <li><a href="questsMenu.html" >Quests menu</a></li>
+                <li><a href="#">Quests menu</a></li>
                 <li><a href="myStats.html">My stats</a></li>
                 <li><a href="#" onclick="notYetReady()">Profile</a></li>
             </ul>
         </div>
 
         <div class="headlineLogo">
-            <img src="../../resoruces/awardLogo/award-logo-single.png"></img>
+            <img src="../../resoruces/headline/quests.png"></img>
         </div>
 
 
@@ -69,15 +69,15 @@
         </button>
         <div class="modal" id="modal">
             <div class="modal-header">
-                <div class="title">Add award</div>
+                <div class="title">Add quest</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
 
-                <form id="add-award-form">
+                <form id="add-quest-form">
 
                     <table style="width:100%">
-                        <h2>Award information</h2>
+                        <h2>Quest information</h2>
                         <tr>
                             <td class="user-entry"><input type="text" placeholder="Title" name="title"></td>
                         </tr>
@@ -90,22 +90,19 @@
                         <tr>
                             <td class="user-entry"><input type="text" placeholder="Price" name="price"></td>
                         </tr>
-                        
+
 
                     </table>
 
-                    <!-- <button class="toEditLink2">
-                        <a>SUBMIT</a>
-                    </button> -->
                     <table style="width:100%">
-                
+
                     </table>
                 </form>
             </div>
         </div>
         <div id="overlay"></div>
 
-        <div class="container-awards">
+        <div class="container-quests">
 
 
         </div>
