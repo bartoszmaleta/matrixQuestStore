@@ -40,13 +40,10 @@ function innerAwards(awards) {
         let cardPills = document.createElement("div");
         cardPills.className = "card-pillPrice";
 
-        // <button data-close-button class="close-button">&times;</button>
-
-        
-
-
-
-
+        let closeButton = document.createElement("button");
+        closeButton.className = "close-button";
+        closeButton.innerText = "x";
+        closeButton.id = "card-close-button";
 
         cardPills.innerText = "cost: " + award.price + " p";
 
@@ -54,6 +51,7 @@ function innerAwards(awards) {
         cardElement.appendChild(cardImage);
         cardElement.appendChild(cardDescription);
         cardElement.appendChild(cardPills);
+        cardElement.appendChild(closeButton);
         cards.appendChild(cardElement);
         container.appendChild(cards);
 
