@@ -14,10 +14,11 @@ function getStudent() {
 function fillStudentProfile(student) {
     let login = document.getElementById('loginUser');
     login.innerText = student.login;
+
     let name = document.getElementById('nameUser');
     name.innerText = student.name;
+
     let surname = document.getElementById('surnameUser');
-    console.log(surname);
     surname.innerText = student.surname;
 
     let role = document.getElementById('roleUser');
@@ -25,6 +26,17 @@ function fillStudentProfile(student) {
 
     let email = document.getElementById('emailUser');
     email.innerText = student.email;
+
+    let coins = document.getElementById('coinsUser');
+    coins.innerText = student.coins;
+
+
+    // TODO:
+    let module = document.getElementById('moduleUser');
+    module.innerText = student.module;
+
+    let personalMentor = document.getElementById('personalMentorUser');
+    personalMentor.innerText = student.personalMentor;
 
 
 }
