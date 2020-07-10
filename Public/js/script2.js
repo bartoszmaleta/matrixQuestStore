@@ -37,6 +37,7 @@ var ctx = c.getContext("2d");
 
 //making the canvas full screen
 c.height = document.documentElement.scrollHeight;
+c.height = 3000;
 // c.width = document.body.clientWidth;
 c.width = document.documentElement.scrollWidth;
 
