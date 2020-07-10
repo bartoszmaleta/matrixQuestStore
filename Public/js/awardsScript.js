@@ -6,6 +6,7 @@ function getAwards() {
             return response.json();
         })
         .then(function(awards){
+            console.log('qweqwe')
             innerAwards(awards)
 
         })
@@ -44,7 +45,7 @@ function innerAwards(awards) {
         addButton.className = "add-button";
         addButton.innerText = "+";
         // addButton.id = "card-add-button";
-        addEventBuyThisCard(addButton, award.id); // adds event to delete buttons!
+        addEventBuyThisCard(addButton, award.id, award.price); // adds event to add buttons!
 
 
         cardPills.innerText = "cost: " + award.price + " p";
@@ -64,13 +65,13 @@ function innerAwards(awards) {
 getAwards();
 // ----------------------------------
 // Buy Award:
-function addEventBuyThisCard(button, cardId) {
+function addEventBuyThisCard(button, cardId, awardPrice) {
     button.addEventListener('click', function (e) {
         e.preventDefault();
         console.log(cardId);
 
         let studentId = sessionStorage.getItem('id');
-        let dataOfCardToBuy = `id=${cardId}&studentId=${studentId}`
+        let dataOfCardToBuy = `cardId=${cardId}&studentId=${studentId}&price=${awardPrice}`
         
         buyAward(dataOfCardToBuy);
 
@@ -80,6 +81,7 @@ function addEventBuyThisCard(button, cardId) {
 }
 
 function buyAward(data) {
+    console.log(data);
     fetch(`${apiUrl}/awards/buy`,
         {
             mode: 'no-cors',
@@ -87,8 +89,10 @@ function buyAward(data) {
             body: data
         })
         .then(function (response) {
-            console.log(response);
-            console.log(data);
+            console.log('qweqwe')
+
+            // console.log(response);
+            // console.log(data);
             location.reload();
         });
 }
