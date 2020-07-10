@@ -44,7 +44,6 @@ function innerAwards(awards) {
         let closeButton = document.createElement("button");
         closeButton.className = "close-button";
         closeButton.innerText = "x";
-        // closeButton.id = "card-close-button";
         addEventDeleteToCard(closeButton, award.id); // adds event to delete buttons!
 
         cardPills.innerText = "cost: " + award.price + " p";

@@ -40,10 +40,10 @@ function innerAwards(awards) {
         let cardPills = document.createElement("div");
         cardPills.className = "card-pillPrice";
 
-        // let closeButton = document.createElement("button");
-        // closeButton.className = "close-button";
-        // closeButton.innerText = "x";
-        // closeButton.id = "card-close-button";
+        let addButton = document.createElement("button");
+        addButton.className = "add-button";
+        addButton.innerText = "+";
+        addButton.id = "card-add-button";
 
         cardPills.innerText = "cost: " + award.price + " p";
 
@@ -51,7 +51,7 @@ function innerAwards(awards) {
         cardElement.appendChild(cardImage);
         cardElement.appendChild(cardDescription);
         cardElement.appendChild(cardPills);
-        // cardElement.appendChild(closeButton);
+        cardElement.appendChild(addButton);
         cards.appendChild(cardElement);
         container.appendChild(cards);
 
@@ -59,6 +59,27 @@ function innerAwards(awards) {
 
 }
 
-
 getAwards();
 
+
+// Wallet with coins:
+const studentId = sessionStorage.getItem('id');
+
+function getStudent() {
+    fetch(`${apiUrl}/students/${studentId}`)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(student){
+            console.log(student);
+            fillWalletWithCoins(student)
+        })
+}
+
+function fillWalletWithCoins(student) {
+    let coins = document.getElementById('coinsUser');
+    coins.innerText = student.coins;
+
+}
+
+getStudent();
