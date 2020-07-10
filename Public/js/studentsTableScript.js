@@ -13,7 +13,7 @@ function getStudents() {
 
 function innerStudents(students) {
     let table = document.createElement("table");
-    table.innerHTML = "<tr><th>ID</th><th>NAME</th><th>SURNAME</th><th>LOGIN</th><th>PASSWORD</th><th>EMAIL</th><th>ROLE</th><th>TRANSACTIONS</th><th>AVATAR PATH</th></tr>";
+    table.innerHTML = "<tr><th>ID</th><th>NAME</th><th>SURNAME</th><th>LOGIN</th><th>PASSWORD</th><th>EMAIL</th><th>ROLE</th><th>COINS</th><th>PERSONAL MENTOR</th></tr>";
     container.appendChild(table);
 
     students.forEach(student => {
@@ -26,8 +26,8 @@ function innerStudents(students) {
             <td>${student.password}</td>
             <td>${student.email}</td>
             <td>${student.role}</td>
-            <td>${student.transactions}</td>
-            <td>${student.avatar}</td>
+            <td>${student.coins}</td>
+            <td>${student.personalMentor}</td>
         `;
         table.appendChild(row);
     });
