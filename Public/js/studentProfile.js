@@ -30,15 +30,11 @@ function fillStudentProfile(student) {
     let coins = document.getElementById('coinsUser');
     coins.innerText = student.coins;
 
-
-    // TODO:
     let module = document.getElementById('moduleUser');
     module.innerText = student.module;
 
     let personalMentor = document.getElementById('personalMentorUser');
     personalMentor.innerText = student.personalMentor;
-
-
 }
 
 getStudent();
