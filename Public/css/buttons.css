@@ -8,3 +8,32 @@
     border: none;
     font-size: 0.5em;
 }
+
+.add {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.adbb img {
+    width: 50px;
+
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    display: flex;
+    opacity: 0.5;
+}
+
+.adbb img:hover {
+    opacity: 1;
+}
