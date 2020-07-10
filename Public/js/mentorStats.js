@@ -16,7 +16,7 @@ function getQuests() {
 
 function innerQuests(quests) {
     let table = document.createElement("table");
-    table.innerHTML = "<tr><th>ID</th><th>TITLE</th><th>DESCRIPTION</th><th>PRIZE</th><th>IMAGE PATH</th><th>CREATOR</th></tr>";
+    table.innerHTML = "<tr><th>ID</th><th>TITLE</th><th>DESCRIPTION</th><th>PRIZE</th><th>CREATOR</th></tr>";
     container.appendChild(table);
 
     quests.forEach(quest => {
@@ -26,7 +26,6 @@ function innerQuests(quests) {
             <td>${quest.title}</td>
             <td>${quest.description}</td>
             <td>${quest.price}</td>
-            <td>${quest.img_src}</td>
             <td>${quest.mentorNameAndSurname}</td>
         `;
         table.appendChild(row);

@@ -82,7 +82,7 @@ function deleteCard(data) {
     console.log(data);
     fetch("http://localhost:8003/mentors/deleteAward",
         {
-            // mode: 'no-cors',
+            mode: 'no-cors',
             method: "POST",
             body: data
         })
