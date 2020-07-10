@@ -22,10 +22,11 @@ function innerTransactions(transactions) {
         let row = document.createElement("tr");
         // TODO: should be in loop
         // row.append(column);
+        console.log(transaction);
         row.innerHTML = `
-            <td>${transaction.user_id}</td>
-            <td>${transaction.title}</td>
-            <td>${transaction.date_bought}</td>
+            <td>${transaction.transactionId}</td>
+            <td>${transaction.awardTitle}</td>
+            <td>${transaction.boughtAt}</td>
             <td>${transaction.price}</td>
             <td>${transaction.owner}</td>
         `;
