@@ -43,7 +43,9 @@ function innerAwards(awards) {
         let addButton = document.createElement("button");
         addButton.className = "add-button";
         addButton.innerText = "+";
-        addButton.id = "card-add-button";
+        // addButton.id = "card-add-button";
+        addEventBuyThisCard(addButton, award.id); // adds event to delete buttons!
+
 
         cardPills.innerText = "cost: " + award.price + " p";
 
@@ -60,8 +62,39 @@ function innerAwards(awards) {
 }
 
 getAwards();
+// ----------------------------------
+// Buy Award:
+function addEventBuyThisCard(button, cardId) {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log(cardId);
+
+        let studentId = sessionStorage.getItem('id');
+        let dataOfCardToBuy = `id=${cardId}&studentId=${studentId}`
+        
+        buyAward(dataOfCardToBuy);
+
+        console.log('buy button!!');
+
+    })
+}
+
+function buyAward(data) {
+    fetch(`${apiUrl}/awards/buy`,
+        {
+            mode: 'no-cors',
+            method: "POST",
+            body: data
+        })
+        .then(function (response) {
+            console.log(response);
+            console.log(data);
+            location.reload();
+        });
+}
 
 
+// ----------------------------------
 // Wallet with coins:
 const studentId = sessionStorage.getItem('id');
 
